@@ -1,68 +1,50 @@
-# Contributing to Color Combo Skill
+# Contributing to color-combo-skill
 
-Thanks for wanting to contribute. This skill is a curated resource for AI agents making color decisions — quality and consistency matter more than quantity.
+Contributions are welcome. All PRs are reviewed and merged by [@bilioveloso](https://github.com/bilioveloso).
 
-## Before you start
+## What you can contribute
 
-Read the full [SKILL.md](./SKILL.md) carefully. Understand the existing categories, the color role system (Primary, Secondary, Accent, Supporting), and the naming conventions. Contributions that don't match the existing format will be asked to revise before merging.
+- New named palettes within an existing category
+- New category proposals (open an issue first)
+- Corrections to hex codes or WCAG contrast ratios
+- CSS gradient snippet fixes
 
-## What we welcome
+## Submission format
 
-- **New named combos** added to an existing category
-- **New gradient pairs** added to an existing category's Gradients section
-- **New categories** — only if the aesthetic is genuinely distinct and not covered by existing categories
-- **Corrections** — wrong hex codes, broken formatting, or naming inconsistencies
-
-## What we don't accept
-
-- Generic, untested color combos with no design rationale
-- Duplicate moods already covered by existing combos
-- Categories that overlap heavily with existing ones
-- AI-generated palettes submitted without human curation and validation
-
-## How to contribute
-
-1. **Fork** this repository
-2. **Create a branch** — name it descriptively, e.g. `add-neon-industrial-combo` or `fix-velvet-crypt-hex`
-3. **Make your changes** following the format below exactly
-4. **Open a Pull Request** with a clear title and a short description of what you added and why it belongs
-
-## Format rules
-
-Every combo must follow this structure precisely:
+Every new palette must include all of the following:
 
 ```
-### Combo Name
-- Style: Short adjective list describing the visual feeling.
+### Palette Name
+- Style: [2-3 evocative words]
 - Primary: #XXXXXX
 - Secondary: #XXXXXX
 - Accent: #XXXXXX
 - Supporting: #XXXXXX, #XXXXXX
-- Best for: Specific use cases, not vague ones.
+- Best for: [2-3 specific use cases]
+- WCAG: Accent on Primary → X.X:1 ✅/⚠️ (AA/AAA / decorative only)
 ```
 
-Every gradient must follow this structure:
+And if you include a gradient:
 
 ```
-#### Gradient Name
-- Saturated Stop: #XXXXXX
-- Light Stop: #XXXXXX
-- Style: Short description.
-- Best for: Specific use cases.
+### Gradient Name
+- Saturated Stop: #XXXXXX → Light Stop: #XXXXXX
+```css
+background: linear-gradient(135deg, #XXXXXX 0%, #XXXXXX 100%);
+` ` `
 ```
 
-## Quality bar
+## Rules
 
-Ask yourself before submitting:
-- Would a professional designer use this combo without hesitation?
-- Is the naming evocative and specific — not generic like "Blue Calm" or "Dark Mode"?
-- Does it fill a real gap, or is it redundant with something already in the skill?
-- Have you actually tested how it looks rendered, not just as hex values on a white background?
+- All hex values must be verified (no approximate values)
+- WCAG contrast ratio must be calculated, not estimated — use [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- Palette names must be evocative and unique within the category
+- Style descriptions: 2–3 words, no full sentences
+- Do not submit palettes that are near-duplicates of existing ones
 
-If the answer to any of these is uncertain, keep refining.
+## Process
 
-## Review process
-
-All pull requests are reviewed by the maintainer. You may be asked to adjust colors, rename combos, or restructure your addition to fit the skill better. This is normal — treat it as a design review, not a rejection.
-
-There is no guaranteed timeline for review. Be patient.
+1. Fork the repo
+2. Add your palette to the correct category in `SKILL.md`
+3. Open a PR with the title format: `feat([Category]): Add [Palette Name]`
+4. Wait for review — @bilioveloso will approve or request changes
