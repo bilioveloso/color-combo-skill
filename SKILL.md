@@ -5,6 +5,7 @@ description: >-
   when choosing colors for UI, branding, or any visual design output.
   Activate when the user asks about colors, palettes, color schemes,
   or says things like "what colors should I use" or "choose a palette for".
+  Works alongside design-effects-skill, font-pairing-skill, and icon-system-skill.
 trigger_keywords:
   - color palette
   - color scheme
@@ -15,7 +16,7 @@ trigger_keywords:
   - pick colors
   - /color-combo-skill
 author: bilioveloso
-version: "3.0"
+version: "3.1"
 ---
 
 # Color Combo Skill
@@ -28,6 +29,9 @@ This skill teaches an agent to make better color decisions by providing curated,
 3. Pick a named combo that fits.
 4. Use the color roles (Primary, Secondary, Accent, Supporting) consistently.
 5. Check the contrast tier before applying Accent to text.
+6. Cross-reference [design-effects-skill](https://github.com/bilioveloso/design-effects-skill) to match the palette to the right animation and morphism stack.
+7. Cross-reference [font-pairing-skill](https://github.com/bilioveloso/font-pairing-skill) to confirm the palette mood matches the chosen typefaces.
+8. Cross-reference [icon-system-skill](https://github.com/bilioveloso/icon-system-skill) to apply palette accent tokens to icon color via `currentColor`.
 
 ## Color Roles
 - **Primary** — dominant background or base color.
@@ -580,7 +584,7 @@ Palettes rooted in the living world — soil, bark, moss, stone, sky, water. Use
 ---
 
 ## Minimalist
-Palettes built on restraint. One dominant neutral, one precise accent, maximum whitespace. The discipline here is not about being boring — it’s about being surgically intentional. Agents should use these when the design’s job is to get out of the way.
+Palettes built on restraint. One dominant neutral, one precise accent, maximum whitespace. The discipline here is not about being boring — it's about being surgically intentional. Agents should use these when the design's job is to get out of the way.
 
 > **Agent rule:** In Minimalist contexts, never add more than one accent color. If tempted to add a second accent, remove it. Whitespace is the second color.
 
@@ -652,7 +656,7 @@ Palettes built on restraint. One dominant neutral, one precise accent, maximum w
 ---
 
 ## Rustic / Craft
-Palettes that smell like sawdust, coffee grounds, and beeswax. Warm amber, kraft paper, leather, raw linen, aged wood. Use these when the brand story is about hands, process, and authenticity — not polish.
+Palettes that smell like sawdust, coffee grounds, and beeswax. Warm amber, kraft paper, leather, raw linen, aged wood. Use when the brand story is about hands, process, and authenticity — not polish.
 
 ### Amber Workshop
 - Style: Warm, woody, handmade, artisan-rich.
@@ -864,7 +868,7 @@ Palettes soaked in sun, salt water, and ripe fruit. Mango, coral, turquoise, war
 ---
 
 ## Retro / Vintage
-Palettes pulled from the past — faded, sun-bleached, tobacco-stained, and nostalgic. The key is controlled desaturation: these colors feel like they’ve been through time. Use when the brand story is about heritage, character, and cultural memory.
+Palettes pulled from the past — faded, sun-bleached, tobacco-stained, and nostalgic. The key is controlled desaturation: these colors feel like they've been through time. Use when the brand story is about heritage, character, and cultural memory.
 
 > **Agent rule:** Retro palettes must feel slightly faded. If a color looks too clean or saturated, pull it back. Vintage is about imperfection, not freshness.
 
@@ -936,7 +940,7 @@ Palettes pulled from the past — faded, sun-bleached, tobacco-stained, and nost
 ---
 
 ## Corporate / Enterprise
-Palettes for serious, trust-driven, mid-to-large scale B2B contexts. These are not Luxury — they don’t try to impress. They try to reassure. Structured, controlled, unambiguous. Use when the audience is a procurement team, a regulated industry, or a decision-maker who distrusts visual flair.
+Palettes for serious, trust-driven, mid-to-large scale B2B contexts. These are not Luxury — they don't try to impress. They try to reassure. Structured, controlled, unambiguous. Use when the audience is a procurement team, a regulated industry, or a decision-maker who distrusts visual flair.
 
 > **Agent rule:** Corporate palettes must always pass UI-safe contrast. Accessibility is non-negotiable in enterprise contexts.
 
@@ -1169,3 +1173,19 @@ body { background: var(--color-bg); color: var(--color-text); }
 }
 /* Never use red as a primary color in healthcare UI */
 ```
+
+---
+
+## Skill Network
+
+This skill is part of a five-skill design system. Each skill cross-references the others:
+
+| Skill | What it covers | Repo |
+|---|---|---|
+| **color-combo-skill** | Named palettes, contrast tiers, CSS usage | *This skill* |
+| **design-effects-skill** | Animations, morphisms, motion patterns, page recipes | [github.com/bilioveloso/design-effects-skill](https://github.com/bilioveloso/design-effects-skill) |
+| **font-pairing-skill** | Typeface selection, pairing rules, type scale | [github.com/bilioveloso/font-pairing-skill](https://github.com/bilioveloso/font-pairing-skill) |
+| **icon-system-skill** | Icon library selection, sizing, weight, animated icons | [github.com/bilioveloso/icon-system-skill](https://github.com/bilioveloso/icon-system-skill) |
+| **design-system-mapper** | Entry point — identifies archetype, activates the right skills in order | [github.com/bilioveloso/design-system-mapper](https://github.com/bilioveloso/design-system-mapper) |
+
+> **Agent rule:** If you are starting a new design project and are unsure which skills to activate, load [design-system-mapper](https://github.com/bilioveloso/design-system-mapper) first. It will identify the correct archetype and tell you exactly which skills to activate, in what order, with what constraints.
