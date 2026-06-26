@@ -1,0 +1,79 @@
+name: New Palette Submission
+description: Submit a new named color palette for an existing category
+title: "feat([Category]): [Palette Name]"
+labels: ["palette-submission", "needs-review"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Luxury
+        - Luxury Facade
+        - Luxury Facade › Soft Prestige
+        - Otherworldly
+        - Acid Contemporary
+        - Refined Defaults
+        - Soft Gradients
+        - Nature / Organic
+        - Minimalist
+        - Rustic / Craft
+        - Gothic / Dark Romance
+        - Warm Tropical / Resort
+        - Retro / Vintage
+        - Corporate / Enterprise
+        - Healthcare / Medical
+        - Gaming / Esports
+        - Seasonal
+        - New category (explain below)
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Palette name
+      description: Evocative, unique within the category (2-3 words)
+    validations:
+      required: true
+  - type: input
+    id: style
+    attributes:
+      label: Style description
+      description: 2-3 evocative adjectives
+      placeholder: "e.g. Bold, opulent, high-impact"
+    validations:
+      required: true
+  - type: textarea
+    id: hexcodes
+    attributes:
+      label: Hex codes
+      description: All four roles required
+      value: |
+        - Primary: #
+        - Secondary: #
+        - Accent: #
+        - Supporting: #, #
+    validations:
+      required: true
+  - type: input
+    id: wcag
+    attributes:
+      label: WCAG contrast (Accent on Primary)
+      description: "Use https://webaim.org/resources/contrastchecker/"
+      placeholder: "e.g. 5.8:1 ✅ (AA)"
+    validations:
+      required: true
+  - type: textarea
+    id: bestfor
+    attributes:
+      label: Best for
+      description: 2-3 specific use cases
+    validations:
+      required: true
+  - type: textarea
+    id: gradient
+    attributes:
+      label: Gradient pair + CSS (optional)
+      description: "Include CSS linear-gradient() snippet if submitting a gradient"
+    validations:
+      required: false
