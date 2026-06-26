@@ -1,16 +1,21 @@
 ---
 name: color-combo-skill
 description: >-
-  Curated named color palettes by mood and intent. Use when choosing colors
-  for UI, branding, or visual design. Trigger on: "choose colors", "palette",
-  "color scheme", "what colors should I use", "/color-combo-skill".
+  Curated named color palettes grouped by mood and intent. Use this skill
+  when choosing colors for UI, branding, or any visual design output.
+  Activate when the user asks about colors, palettes, color schemes,
+  or says things like "what colors should I use" or "choose a palette for".
 trigger_keywords:
   - color palette
   - color scheme
   - choose colors
   - what colors
   - palette for
+  - color combo
+  - pick colors
   - /color-combo-skill
+author: bilioveloso
+version: "3.0"
 ---
 
 # Color Combo Skill
@@ -67,7 +72,7 @@ High-end, genuinely premium, opulent palettes. Use when the output must feel exp
 - Secondary: #1C1A17
 - Accent: #D4AF37
 - Supporting: #B87333, #2D3138, #E9E1D0
-- Contrast tier: **Large text only** (Accent #D4AF37 on Primary #0B0B0F — ~8.9:1 — UI-safe)
+- Contrast tier: **UI-safe** (Accent #D4AF37 on Primary #0B0B0F — ~8.9:1)
 - Best for: Premium branding, fashion, luxury product visuals, dramatic editorial layouts.
 
 ### Arctic Prestige
@@ -85,7 +90,7 @@ High-end, genuinely premium, opulent palettes. Use when the output must feel exp
 - Secondary: #1A1A1D
 - Accent: #FF4D00
 - Supporting: #8B1E00, #4A4746, #F2F1EE
-- Contrast tier: **Large text only** (Accent #FF4D00 on Primary #0B0B0B — ~5.8:1 — UI-safe)
+- Contrast tier: **UI-safe** (Accent #FF4D00 on Primary #0B0B0B — ~5.8:1)
 - Best for: Sports branding, performance themes, launch campaigns, bold visual identities.
 
 ### Futuristic Elegance
@@ -575,7 +580,7 @@ Palettes rooted in the living world — soil, bark, moss, stone, sky, water. Use
 ---
 
 ## Minimalist
-Palettes built on restraint. One dominant neutral, one precise accent, maximum whitespace. The discipline here is not about being boring — it's about being surgically intentional. Agents should use these when the design's job is to get out of the way.
+Palettes built on restraint. One dominant neutral, one precise accent, maximum whitespace. The discipline here is not about being boring — it’s about being surgically intentional. Agents should use these when the design’s job is to get out of the way.
 
 > **Agent rule:** In Minimalist contexts, never add more than one accent color. If tempted to add a second accent, remove it. Whitespace is the second color.
 
@@ -859,7 +864,7 @@ Palettes soaked in sun, salt water, and ripe fruit. Mango, coral, turquoise, war
 ---
 
 ## Retro / Vintage
-Palettes pulled from the past — faded, sun-bleached, tobacco-stained, and nostalgic. The key is controlled desaturation: these colors feel like they've been through time. Use when the brand story is about heritage, character, and cultural memory.
+Palettes pulled from the past — faded, sun-bleached, tobacco-stained, and nostalgic. The key is controlled desaturation: these colors feel like they’ve been through time. Use when the brand story is about heritage, character, and cultural memory.
 
 > **Agent rule:** Retro palettes must feel slightly faded. If a color looks too clean or saturated, pull it back. Vintage is about imperfection, not freshness.
 
@@ -931,7 +936,7 @@ Palettes pulled from the past — faded, sun-bleached, tobacco-stained, and nost
 ---
 
 ## Corporate / Enterprise
-Palettes for serious, trust-driven, mid-to-large scale B2B contexts. These are not Luxury — they don't try to impress. They try to reassure. Structured, controlled, unambiguous. Use when the audience is a procurement team, a regulated industry, or a decision-maker who distrusts visual flair.
+Palettes for serious, trust-driven, mid-to-large scale B2B contexts. These are not Luxury — they don’t try to impress. They try to reassure. Structured, controlled, unambiguous. Use when the audience is a procurement team, a regulated industry, or a decision-maker who distrusts visual flair.
 
 > **Agent rule:** Corporate palettes must always pass UI-safe contrast. Accessibility is non-negotiable in enterprise contexts.
 
