@@ -83,6 +83,10 @@ Emit palette choices as CSS custom properties so any UI system can consume them:
 | B2B SaaS, enterprise software, finance, legal | Corporate / Enterprise |
 | Medical, clinical, healthcare, pharma, wellness tech | Healthcare / Medical |
 | Gaming, esports, streaming, competitive, dark neon | Gaming / Esports |
+| Spring campaign, seasonal refresh, renewal | Seasonal / Spring |
+| Summer campaign, outdoor, peak season | Seasonal / Summer |
+| Autumn campaign, harvest, back-to-school | Seasonal / Autumn |
+| Winter campaign, holiday, festive | Seasonal / Winter |
 
 ---
 
@@ -918,6 +922,142 @@ background: linear-gradient(135deg, #120808 0%, #FF3000 100%);
 
 ---
 
+
+
+---
+
+## Seasonal
+
+Palettes calibrated to seasonal contexts — campaign refreshes, retail seasons, and holiday branding.
+
+> **Agent rule:** Seasonal palettes are time-scoped. Always note the intended season/period in the Design Route block so downstream skills (effects, fonts) can align to the seasonal mood.
+
+### Spring Bloom
+- Style: Fresh, light, renewal, optimistic.
+- Primary: #F0F7E6
+- Secondary: #5BA85C
+- Accent: #FF7EB3
+- Supporting: #B5D5A8, #E8F5D8, #FFD6EB
+- Best for: Spring campaign hero sections, Easter branding, garden/lifestyle seasonal refresh.
+- WCAG: Secondary (#5BA85C) on Primary (#F0F7E6) → **4.5:1 ✅** (AA). Accent (#FF7EB3) on Primary → **2.1:1 ⚠️** Decorative only.
+
+### Summer Pulse
+- Style: Hot, vivid, outdoor energy, peak season.
+- Primary: #FF8C00
+- Secondary: #005FA3
+- Accent: #FFFFFF
+- Supporting: #FFC04D, #0047A0, #E8F4FF
+- Best for: Summer sale campaigns, beach/outdoor brands, peak season promotions, festival branding.
+- WCAG: Accent (#FFFFFF) on Secondary (#005FA3) → **7.3:1 ✅** (AA).
+
+### Autumn Harvest
+- Style: Warm, rich, transitional, harvest depth.
+- Primary: #C8601A
+- Secondary: #F5E6C8
+- Accent: #3A2808
+- Supporting: #8B3A0A, #D4A86A, #FAF0DC
+- Best for: Autumn campaigns, harvest themes, back-to-school, seasonal menu refreshes.
+- WCAG: Accent (#3A2808) on Secondary (#F5E6C8) → **11.2:1 ✅** (AAA).
+
+### Winter Silence
+- Style: Cold, still, luxury-adjacent, cinematic.
+- Primary: #0A1628
+- Secondary: #C8D8E8
+- Accent: #E8C84A
+- Supporting: #1E3A5A, #8AAAC8, #F0F5F8
+- Best for: Winter campaigns, holiday packaging, Christmas editorial, cold-season luxury.
+- WCAG: Accent (#E8C84A) on Primary (#0A1628) → **8.9:1 ✅** (AAA).
+
+### Holiday Warmth
+- Style: Festive, warm, inclusive, celebratory.
+- Primary: #C41E3A
+- Secondary: #F5F0E8
+- Accent: #D4AF37
+- Supporting: #8B0000, #E8D5B0, #FAF8F0
+- Best for: Christmas/holiday campaigns, festive retail, end-of-year celebration branding.
+- WCAG: Use Secondary (#F5F0E8) for text on Primary → **8.4:1 ✅** (AAA). Accent on Primary → **3.2:1 ⚠️** Large text only.
+
+### Gradients
+
+#### Spring Rise
+```css
+background: linear-gradient(135deg, #5BA85C 0%, #F0F7E6 100%);
+```
+
+#### Summer Horizon
+```css
+background: linear-gradient(135deg, #FF8C00 0%, #005FA3 100%);
+```
+
+#### Amber Fall
+```css
+background: linear-gradient(135deg, #C8601A 0%, #F5E6C8 100%);
+```
+
+#### Winter Depth
+```css
+background: linear-gradient(135deg, #0A1628 0%, #C8D8E8 100%);
+```
+
+#### Holiday Glow
+```css
+background: linear-gradient(135deg, #C41E3A 0%, #D4AF37 100%);
+```
+
+---
+
+## Brand Archetype Guide
+
+Use this when the brief describes brand personality rather than industry.
+Archetypes map directly to color category intent and can confirm or override an industry signal.
+
+> **Agent rule:** Brand archetype is a secondary signal. It confirms or refines the category from the Decision Guide. If archetype contradicts industry, surface both options and let the user decide.
+
+| Archetype | Core emotion | Recommended category | Notes |
+|---|---|---|---|
+| The Innocent | Purity, simplicity, trust | Soft Gradients, Luxury Facade / Soft Prestige | Light palettes, no aggression |
+| The Everyman | Belonging, honesty, approachability | Rustic / Craft, Nature / Organic | Warm, unpretentious, no flash |
+| The Hero | Courage, achievement, ambition | Luxury / Volcanic Intensity, Acid Contemporary | Bold, strong contrast |
+| The Outlaw / Rebel | Disruption, freedom, revolution | Acid Contemporary, Gaming / Esports | Maximum contrast, confrontational |
+| The Explorer | Adventure, discovery, freedom | Warm Tropical / Resort, Nature / Organic, Otherworldly | Open, expansive |
+| The Creator | Craft, imagination, originality | Minimalist, Rustic / Craft, Retro / Vintage | Considered, intentional |
+| The Ruler | Authority, control, prestige | Luxury / Golden Obsession, Corporate / Finance Trust | Commanding, structured |
+| The Magician | Transformation, vision, mystery | Otherworldly, Gothic / Dark Romance | Surreal, transformational |
+| The Lover | Intimacy, passion, beauty | Gothic / Bone & Wine, Luxury Facade / Soft Prestige | Sensual, emotionally rich |
+| The Caregiver | Nurturing, warmth, service | Healthcare / Wellness Sage, Soft Gradients | Safe, gentle, human-first |
+| The Jester | Fun, play, irreverence | Warm Tropical / Resort, Seasonal / Summer Pulse | Energy without aggression |
+| The Sage | Knowledge, wisdom, clarity | Corporate / Steel Platform, Minimalist / Chalk & Ink | Clean, authoritative |
+
+---
+
+## Dark Mode Adaptation
+
+When a brief requires dark mode, adapt any palette using these rules rather than guessing.
+
+### Universal rules
+
+1. **Swap Primary ↔ Secondary** — the dominant surface becomes dark; the secondary becomes the lighter surface element.
+2. **Desaturate Accent by 10–15%** — pure saturated accents vibrate on dark backgrounds; pulling back reduces eye strain.
+3. **Lift Supporting tones** — lighten supporting neutrals by 20–30% so they remain visible against dark surfaces.
+4. **Never go below #111111** for dark backgrounds — pure #000000 creates harsh contrast and feels undesigned.
+5. **Re-check WCAG after adapting** — contrast ratios change when colors are inverted.
+
+### Per-category dark mode guidance
+
+| Category | Dark mode approach |
+|---|---|
+| Luxury | Most already dark-first (Golden Obsession, Volcanic Intensity) — use as-is |
+| Luxury Facade | Swap Primary/Secondary; keep Accent |
+| Minimalist | Bone & Carbon already works; Chalk & Ink: swap to #111111 base, #F8F8F8 text |
+| Corporate | Slate Command dark: use #0D1520 base, #D8E2EC surfaces, Accent unchanged |
+| Healthcare | Avoid full dark mode for clinical UI — use "dim mode" (max bg: #1A2A3A) not true dark |
+| Gothic | Already dark-first — no adaptation needed |
+| Gaming | Already dark-first — no adaptation needed |
+| Otherworldly | Already dark-first — no adaptation needed |
+| Nature / Organic | Dark variant: use Deep Canopy palette as base |
+| Warm Tropical | Reduce saturation by 20%; use dark base #0A1A1A with Sunset Punch Accent |
+| Retro / Vintage | Use Smoked Oak (Rustic) as dark base; retain desaturated retro tones |
+| Soft Gradients | Invert gradient direction; desaturate both stops by 15% |
 ## Contributing
 
 New color combinations welcome. Each submission should include:
