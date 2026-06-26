@@ -21,6 +21,7 @@ This skill teaches an agent to make better color decisions by providing curated,
 | Aspirational, polished, budget-friendly | Luxury Facade |
 | Calm, clean, editorial, soft brand | Luxury Facade > Soft Prestige |
 | Futuristic, neon, surreal, cyber | Otherworldly |
+| Disruptive, urban, bold, street-level | Acid Contemporary |
 
 ---
 
@@ -213,3 +214,53 @@ Futuristic, neon, surreal, cyber, and reality-bending palettes. Use when the out
 - Primary: #3C1A47
 - Secondary: #B6FF00
 - Best for: Futuristic editorial design, bold app themes, neon contrast work.
+
+---
+
+## Acid Contemporary
+Disruptive, urban, high-voltage palettes. These combos are confrontational by design — they belong to street culture, bold editorial, event branding, and any context where the visual needs to hit like a punch. No subtlety. No compromise.
+
+### Ink Volt
+- Style: Maximum contrast, street editorial, aggressive typographic energy.
+- Primary: #0A0A0A
+- Secondary: #F5E800
+- Accent: #AAAAAA
+- Supporting: #1A1A1A
+- Best for: Urban posters, music events, bold typographic campaigns, street brand launches.
+- Inspired by: Yellow.com editorial, Vote for Yere rave poster, The Young K film.
+
+### Crimson Grid
+- Style: Dark tech, cinematic tension, high-drama red.
+- Primary: #0D0D0D
+- Secondary: #CC0A20
+- Accent: #FFFFFF
+- Supporting: #1A0A0A, #3A0010
+- Best for: Design conferences, dark editorial, film and event identity, tech brand moments.
+- Inspired by: DSGN-2025 styleframes, Golden Melody Awards, Urbane Systeme grid.
+
+### Blood Stage
+- Style: Raw, mythic, performance-driven, crowd energy.
+- Primary: #C8102E
+- Secondary: #0A0A0A
+- Accent: #FFFFFF
+- Supporting: #8B0000, #5C0015
+- Best for: Sports campaigns, concert and tour branding, action editorial, hero visuals.
+- Inspired by: After Dark Tour, Old Gods poster, Nike Metcon 10 red.
+
+### Tactical Lime
+- Style: Military edge, athletic aggression, acid-nature contrast.
+- Primary: #3B3D2A
+- Secondary: #C2F03A
+- Accent: #1A6B5C
+- Supporting: #CC2B2B, #1A1A1A
+- Best for: Sportswear, outdoor gear, performance culture, urban athletic branding.
+- Inspired by: Kolonial expedition gear, Marathon poster, Leap collection, Nike Metcon 10 teal.
+
+### Void Green
+- Style: Digital underground, hacker aesthetic, neon life in darkness.
+- Primary: #050F05
+- Secondary: #1AE81A
+- Accent: #0D4A0D
+- Supporting: #002200, #111111
+- Best for: Tech events, music platforms, underground culture, digital activism visuals.
+- Inspired by: Dubai Robotics XOX event, Spotify Tune Into You, Still Water editorial, Good Victory.
