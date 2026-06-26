@@ -23,6 +23,7 @@ This skill teaches an agent to make better color decisions by providing curated,
 | Futuristic, neon, surreal, cyber | Otherworldly |
 | Disruptive, urban, bold, street-level | Acid Contemporary |
 | Replacing a raw default color with a tasteful alternative | Refined Defaults |
+| Soft background, calming gradient, wellness, airy UI | Soft Gradients |
 
 ---
 
@@ -308,3 +309,46 @@ Smarter, more nuanced alternatives to the blunt base colors that beginners and l
 - Use: #361269, #6000D3, #7C44A5, #665090
 - Best for: Premium consumer brands, chocolate/food, tech, beauty, gaming.
 - Why: Default bright purple feels accidental. These have weight, identity, and recognisability (Cadbury, Yahoo).
+
+---
+
+## Soft Gradients
+Named two-stop gradient pairs built for calm, breathable, emotionally gentle visuals. Each gradient has a light stop and a saturated stop that blend naturally. Use these for backgrounds, hero sections, UI cards, app onboarding, wellness, and any context that needs to feel soothing rather than stimulating.
+
+> **Agent rule:** Each gradient is defined by two stops — Light Stop and Saturated Stop. Apply as a linear or radial gradient between them. Direction is flexible; top-to-bottom and diagonal both work well.
+
+### Eucalyptus Glow
+- Saturated Stop: #A7C4A0
+- Light Stop: #F4EFE6
+- Style: Organic, calm, natural, grounded.
+- Best for: Wellness brands, skincare, eco packaging, spa identity, natural product backgrounds.
+
+### Pearl Mauve
+- Saturated Stop: #D8BFD8
+- Light Stop: #FDFCFB
+- Style: Delicate, feminine, soft luxury, dreamy.
+- Best for: Beauty, bridal, fragrance, soft editorial, premium lifestyle backgrounds.
+
+### Ocean Breeze
+- Saturated Stop: #7FCDFF
+- Light Stop: #DFF7FF
+- Style: Light, airy, fresh, open.
+- Best for: Travel, wellness apps, clean UI backgrounds, summer campaigns, healthcare.
+
+### Peach Champagne
+- Saturated Stop: #FFD3B6
+- Light Stop: #DFF7FF
+- Style: Warm, soft, inviting, gentle.
+- Best for: Food and beverage, lifestyle, warm UI, gentle brand onboarding, pastel editorial.
+
+### Dreamy Periwinkle
+- Saturated Stop: #B8C0FF
+- Light Stop: #E7D8FF
+- Style: Soft, romantic, modern, slightly surreal.
+- Best for: Digital products, Gen-Z beauty, dreamy editorial, calm app interfaces, creative soft branding.
+
+### Mint Lagoon
+- Saturated Stop: #6DD5C4
+- Light Stop: #DFF6F0
+- Style: Cool, refreshing, serene, clean.
+- Best for: Spa, wellness tech, beauty apps, clean UI surfaces, fresh product packaging.
