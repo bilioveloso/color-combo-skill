@@ -22,6 +22,7 @@ This skill teaches an agent to make better color decisions by providing curated,
 | Calm, clean, editorial, soft brand | Luxury Facade > Soft Prestige |
 | Futuristic, neon, surreal, cyber | Otherworldly |
 | Disruptive, urban, bold, street-level | Acid Contemporary |
+| Replacing a raw default color with a tasteful alternative | Refined Defaults |
 
 ---
 
@@ -264,3 +265,46 @@ Disruptive, urban, high-voltage palettes. These combos are confrontational by de
 - Supporting: #002200, #111111
 - Best for: Tech events, music platforms, underground culture, digital activism visuals.
 - Inspired by: Dubai Robotics XOX event, Spotify Tune Into You, Still Water editorial, Good Victory.
+
+---
+
+## Refined Defaults
+Smarter, more nuanced alternatives to the blunt base colors that beginners and lazy tools default to. When a context calls for black, white, blue, red, green, or purple — never use the raw value. Use these instead. Each entry shows the avoid color and the tasteful replacements.
+
+> **Agent rule:** If you are about to use #000000, #ffffff, #0000ff, #ff0000, #00ff00, or #9a4dff — stop. Pick from the refined alternatives below instead.
+
+### Instead of Black (#000000)
+- Style: Rich, deep, tactile darkness with character.
+- Use: #161616, #232323, #2C2C2C, #363636
+- Best for: Premium dark UI, tech product photography, headphones/audio brands, minimal dark packaging.
+- Why: Pure black feels flat and printed. These near-blacks have warmth or coolness that reads more intentional.
+
+### Instead of White (#ffffff)
+- Style: Clean, breathable, soft minimalism.
+- Use: #F6F6F6, #EEEEF0, #DEDEDE, #E1E1E1
+- Best for: Product photography backdrops, minimal UI, skincare, wellness, clean SaaS interfaces.
+- Why: Pure white glows on screen and feels sterile. Off-whites feel considered, premium, and easier on the eye.
+
+### Instead of Blue (#0000ff)
+- Style: Confident, trustworthy, modern depth.
+- Use: #347AEA, #1E2FB0, #1E4BA3, #223068
+- Best for: Tech brands, SaaS, fashion accessories, consumer goods, healthcare.
+- Why: Pure blue is aggressive and dated. These variants carry authority without shouting.
+
+### Instead of Red (#ff0000)
+- Style: Intentional, rich, brand-quality red.
+- Use: #F64547, #D7202D, #941020, #C92D31
+- Best for: Beauty, premium food, fashion, packaging, bold brand identities.
+- Why: Pure red is alarm-level intensity. These reds feel designed, not defaulted to.
+
+### Instead of Green (#00ff42)
+- Style: Natural, organic, trustworthy green.
+- Use: #91B96B, #5C985A, #56754B, #306C5F
+- Best for: Wellness, skincare, eco brands, perfume, natural product lines.
+- Why: Neon green screams synthetic. These greens feel grown, not coded.
+
+### Instead of Purple (#9a4dff)
+- Style: Deep, intentional, brand-grade purple.
+- Use: #361269, #6000D3, #7C44A5, #665090
+- Best for: Premium consumer brands, chocolate/food, tech, beauty, gaming.
+- Why: Default bright purple feels accidental. These have weight, identity, and recognisability (Cadbury, Yahoo).
