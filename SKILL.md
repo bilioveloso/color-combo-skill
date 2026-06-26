@@ -5,7 +5,7 @@ description: >-
   when choosing colors for UI, branding, or any visual design output.
   Activate when the user asks about colors, palettes, color schemes,
   or says things like "what colors should I use" or "choose a palette for".
-  Works alongside design-effects-skill, font-pairing-skill, and icon-system-skill.
+  Works alongside font-pairing-skill, design-effects-skill, and icon-system-skill.
 trigger_keywords:
   - color palette
   - color scheme
@@ -29,9 +29,9 @@ This skill teaches an agent to make better color decisions by providing curated,
 3. Pick a named combo that fits.
 4. Use the color roles (Primary, Secondary, Accent, Supporting) consistently.
 5. Check the contrast tier before applying Accent to text.
-6. Cross-reference [design-effects-skill](https://github.com/bilioveloso/design-effects-skill) to match the palette to the right animation and morphism stack.
-7. Cross-reference [font-pairing-skill](https://github.com/bilioveloso/font-pairing-skill) to confirm the palette mood matches the chosen typefaces.
-8. Cross-reference [icon-system-skill](https://github.com/bilioveloso/icon-system-skill) to apply palette accent tokens to icon color via `currentColor`.
+6. Cross-reference [font-pairing-skill](https://github.com/bilioveloso/font-pairing-skill) to confirm the palette mood matches the chosen typeface.
+7. Cross-reference [design-effects-skill](https://github.com/bilioveloso/design-effects-skill) to apply the palette to the correct page-type recipe and effects stack.
+8. Cross-reference [icon-system-skill](https://github.com/bilioveloso/icon-system-skill) to source icon color tokens from the active palette.
 
 ## Color Roles
 - **Primary** — dominant background or base color.
@@ -656,7 +656,7 @@ Palettes built on restraint. One dominant neutral, one precise accent, maximum w
 ---
 
 ## Rustic / Craft
-Palettes that smell like sawdust, coffee grounds, and beeswax. Warm amber, kraft paper, leather, raw linen, aged wood. Use when the brand story is about hands, process, and authenticity — not polish.
+Palettes that smell like sawdust, coffee grounds, and beeswax. Warm amber, kraft paper, leather, raw linen, aged wood. Use these when the brand story is about hands, process, and authenticity — not polish.
 
 ### Amber Workshop
 - Style: Warm, woody, handmade, artisan-rich.
@@ -1178,7 +1178,7 @@ body { background: var(--color-bg); color: var(--color-text); }
 
 ## Skill Network
 
-This skill is part of a five-skill design system. Each skill cross-references the others:
+This skill is part of a four-skill design system. Each skill cross-references the others:
 
 | Skill | What it covers | Repo |
 |---|---|---|
@@ -1186,6 +1186,5 @@ This skill is part of a five-skill design system. Each skill cross-references th
 | **design-effects-skill** | Animations, morphisms, motion patterns, page recipes | [github.com/bilioveloso/design-effects-skill](https://github.com/bilioveloso/design-effects-skill) |
 | **font-pairing-skill** | Typeface selection, pairing rules, type scale | [github.com/bilioveloso/font-pairing-skill](https://github.com/bilioveloso/font-pairing-skill) |
 | **icon-system-skill** | Icon library selection, sizing, weight, animated icons | [github.com/bilioveloso/icon-system-skill](https://github.com/bilioveloso/icon-system-skill) |
-| **design-system-mapper** | Entry point — identifies archetype, activates the right skills in order | [github.com/bilioveloso/design-system-mapper](https://github.com/bilioveloso/design-system-mapper) |
 
-> **Agent rule:** If you are starting a new design project and are unsure which skills to activate, load [design-system-mapper](https://github.com/bilioveloso/design-system-mapper) first. It will identify the correct archetype and tell you exactly which skills to activate, in what order, with what constraints.
+> **Need pre-built UI components?** [React Bits](https://www.reactbits.dev/get-started/index) has ready-to-use animated and interactive components that pair well with these palettes. Install only the specific component you need and credit the source when adapting their work.
