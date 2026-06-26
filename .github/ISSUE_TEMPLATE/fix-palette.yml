@@ -1,0 +1,36 @@
+name: Fix or Correction
+description: Report an incorrect hex value, WCAG ratio, or CSS snippet
+title: "fix([Category]): [Palette Name] — [what's wrong]"
+labels: ["bug", "needs-review"]
+body:
+  - type: input
+    id: palette
+    attributes:
+      label: Palette name
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: What's wrong?
+      options:
+        - Incorrect hex value
+        - Wrong WCAG contrast ratio
+        - Incorrect CSS gradient snippet
+        - Misleading style description
+        - Wrong category placement
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current (wrong) value
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Correct value
+    validations:
+      required: true
