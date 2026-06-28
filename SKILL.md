@@ -1058,6 +1058,52 @@ When a brief requires dark mode, adapt any palette using these rules rather than
 | Warm Tropical | Reduce saturation by 20%; use dark base #0A1A1A with Sunset Punch Accent |
 | Retro / Vintage | Use Smoked Oak (Rustic) as dark base; retain desaturated retro tones |
 | Soft Gradients | Invert gradient direction; desaturate both stops by 15% |
+## Color Discipline
+
+Rules for *using* a palette — applied on top of whichever combo you choose.
+
+### Pixel-share structure
+
+Plan all four layers before writing any CSS. A coherent palette allocates screen
+real-estate deliberately:
+
+| Layer | Share of pixels | What it covers |
+|---|---|---|
+| **Neutrals** | 70–90% | Backgrounds, surfaces, body text, borders |
+| **Accent** (one) | 5–10% | CTAs, chips, active states — never invent a second accent |
+| **Semantic** | 0–5% | Success, warning, danger states only |
+| **Effect** | < 1% | Glows, gradients — rarely justified |
+
+### Accent discipline
+
+The single biggest readability failure in AI-generated UIs is accent overuse.
+
+- **At most 2 visible uses of accent per screen.** Typical pair: one chip/eyebrow label +
+  one primary CTA. Or one accent card header + one tab indicator. Pick a pair.
+- **Links count as accent.** If you already have a CTA on the same screen, demote links to
+  underlined foreground colour instead.
+- **Hover/focus rings count as accent.** Budget them in your 2-use cap.
+
+### Dark surface borders
+
+On dark backgrounds, prefer **semi-transparent white borders** over solid dark ones:
+```css
+border: 1px solid rgba(255, 255, 255, 0.08);
+```
+This reads as structure without adding visual noise. Solid dark borders on dark
+surfaces disappear.
+
+### Near-black / near-white floors
+
+Avoid pure `#000000` and `#ffffff` — both cause vibration and feel undesigned:
+
+| Token | Dark theme | Light theme |
+|---|---|---|
+| Background | `#0f0f0f` | `#fafafa` |
+| Foreground text | `#f0f0f0` | `#111111` |
+
+---
+
 ## Contributing
 
 New color combinations welcome. Each submission should include:
